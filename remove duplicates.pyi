@@ -2,7 +2,7 @@ from collections import OrderedDict
 def remove_duplicates(lst):
     return list(OrderedDict.fromkeys(lst))
 
-nums = [1,34332,23,23412,32431,223,4321,32134,12231]
+nums = [1,34,332,43,34,23,23412,32,431,223,43,21,321,34,122,31]
 print("original lists: ")
 print(nums)
 result = remove_duplicates(nums)
