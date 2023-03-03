@@ -1,10 +1,14 @@
-import time
-import datetime
-print("Current date and time: ",datetime.datetime.now())
-print("current year: ",datetime.date.today().strftime("%Y"))
-print("Month of year: ",datetime.date.today().strftime("%B"))
-print("Week number of the year : ",datetime.date.today().strftime("%W"))
-print("Weekday of the week : ",datetime.date.today().strftime("%w"))
-print("day of the year: ",datetime.date.today().strftime("%j"))
-print("day of the month:",datetime.date.today().strftime("%d"))
-print("day of week: ",datetime.date.today().strftime("%A"))
+from collections import OrderedDict
+def remove_duplicates(lst):
+    return list(OrderedDict.fromkeys(lst))
+
+nums = [1,34332,23,23412,32431,223,4321,32134,12231]
+print("original lists: ")
+print(nums)
+result = remove_duplicates(nums)
+print("The duplicates are removed")
+print(result)
+chars = ['a','a','d','d','e','f','g']
+print("\nOriginal lists:")
+print("Remove duplicates while printing the order ")
+print(result)
